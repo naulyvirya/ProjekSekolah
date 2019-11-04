@@ -12,11 +12,11 @@
     </form>
     <hr>
 <?php
-    if (isset($_GET['Submit'])) {
-        $a = $_GET['jml'];
-        for ($i=0; $i < $a; $i++) {
-        
-    ?>
+if (isset($_GET['Submit'])) {
+    $a = $_GET['jml'];
+    for ($i = 0; $i < $a; $i++) {
+
+        ?>
             <form action="formberpangkatpro.php" method="POST">
             <table>
             <tr>
@@ -27,15 +27,17 @@
             <td><input type="number" name="pangkat[]"></td>
             </tr></table> 
     <?php
-        }    
-    ?>
+
+}
+?>
             <tr>
             <input type="submit" name="sbm" value="Simpan">
             <input type="reset" value="Reset">
             </tr>
     <?php
-    }
-    ?>
+
+}
+?>
             </form>
 </fieldset>    
 </body>
